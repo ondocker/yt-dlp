@@ -13,4 +13,6 @@ RUN chmod +x /bin/entry.sh
 RUN mkdir /data
 WORKDIR /data
 
+ENV UPDATE_YTDLP=no
+
 ENTRYPOINT [ "/bin/bash", "/bin/entry.sh" ]
