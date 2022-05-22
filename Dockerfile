@@ -2,7 +2,7 @@ FROM python:3.9.10-slim-bullseye
 
 RUN apt-get update && apt-get -y install ffmpeg && rm -rf /var/lib/apt/lists/*
 
-ARG ytdlp_pip_version=2022.4.8
+ARG ytdlp_pip_version=2022.5.18
 
 RUN /usr/local/bin/python -m pip install --upgrade pip
 RUN pip install yt-dlp==${ytdlp_pip_version}
